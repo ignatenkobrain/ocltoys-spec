@@ -1,0 +1,25 @@
+From f75cfa40666ebca583c4a08c873b92ae5361d8eb Mon Sep 17 00:00:00 2001
+From: Igor Gnatenko <i.gnatenko.brain@gmail.com>
+Date: Mon, 20 Jan 2014 15:22:13 +0400
+Subject: [PATCH 2/2] configure: add sse and sse2 to cppflags
+
+Signed-off-by: Igor Gnatenko <i.gnatenko.brain@gmail.com>
+---
+ configure.ac | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/configure.ac b/configure.ac
+index 5f810e9..61f02b6 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -19,6 +19,7 @@ AX_CHECK_GLU
+ AX_CHECK_GLUT
+ AC_CHECK_LIB([OpenCL], [clGetPlatformIDs])
+ CFLAGS="-Wall"
++CPPFLAGS="-Wall -msse -msse2"
+ package_datadir="${prefix}/share/ocltoys/"
+ AC_DEFINE_UNQUOTED([PACKAGE_DATADIR], ["$package_datadir"], [Configuration machine file.])
+ AC_SUBST(package_datadir)
+-- 
+1.8.5.3
+

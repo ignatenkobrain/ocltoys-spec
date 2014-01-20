@@ -1,7 +1,7 @@
 From 82888c35398c698cd6dc1fa21ab4436088c0e439 Mon Sep 17 00:00:00 2001
 From: Igor Gnatenko <i.gnatenko.brain@gmail.com>
 Date: Mon, 20 Jan 2014 03:50:09 +0400
-Subject: [PATCH] build: migrate to GNU autotools
+Subject: [PATCH 1/2] build: migrate to GNU autotools
 
 Signed-off-by: Igor Gnatenko <i.gnatenko.brain@gmail.com>
 ---
